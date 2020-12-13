@@ -42,7 +42,7 @@ const ModalPage = ({ ...props }) => {
             </Button>
             <Drawer
                 title="Add new Task"
-                width={720}
+                width={300}
                 onClose={onClose}
                 visible={visible}
                 bodyStyle={{ paddingBottom: 80 }}
@@ -68,13 +68,13 @@ const ModalPage = ({ ...props }) => {
                     
                         
                     
-                    <Row gutter={16}>
-                        <Col span={12}>
+                    <Row gutter={48}>
+                        <Col span={24}>
                     <Form.Item >
-                                <Button type="primary" htmlType="submit" style={{ marginRight: 8 }} >
+                                <Button type="primary" htmlType="submit" style={{ marginRight: 2 }} >
                                     Save 
                                 </Button>
-                                <Button onClick={onClose} style={{ marginRight: 8 }}>
+                                <Button onClick={onClose} style={{ marginRight: 2 }}>
                                     Cancel
                                 </Button>
                     </Form.Item>
