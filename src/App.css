@@ -52,8 +52,8 @@
 .Weather {
   background-image: linear-gradient(
       to right,
-      rgba(136, 14, 130, 0.5),
-      rgba(0, 0, 0, 0.73)
+      #8253DA,
+      #6530C8
     );
     
   background-repeat: no-repeat;
@@ -74,8 +74,8 @@
 .sider-layout{
   background-image: linear-gradient(
       to right,
-      rgba(136, 14, 130, 0.5),
-      rgba(0, 0, 0, 0.73)
+      #8253DA,
+      #6530C8
     );
     
     width:25%;

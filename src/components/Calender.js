@@ -58,16 +58,12 @@ const Calender= ({ todos, fetchTodo }) => {
               <Breadcrumb.Item>ToDo App</Breadcrumb.Item>
               
             </Breadcrumb>
-        <div className="site-layout-background" style={{ padding: '24px', minHeight: 350 }}>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
-              <Col span={6}/>
-      <Col span={16}><Calendar
+        <div className="site-layout-background" style={{ padding: '24px', minHeight: 350,alignItems:'center',justifyContent:'center',display:'flex' }}>
+        <Calendar
       value={selectedDay}
       onChange={changeDate}
       calendarClassName="responsive-calendar" // added this
-      shouldHighlightWeekends/></Col><Col span={6}/>
-    
-    </Row>
+      shouldHighlightWeekends/>
         </div>
       </Content>
       <Footer style={{ textAlign: 'center',background:'#ffff' }}>
