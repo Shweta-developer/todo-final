@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { store } from "./actions/store";
+import { Provider } from "react-redux";
+import Calendar from 'react-calendar'
+import 'react-calendar/dist/Calendar.css';
+import Calender from './components/Calender';
+import moment from 'moment'
+import 'antd/dist/antd.css';
 import './App.css';
-
 function App() {
+  
+  const [dateState, setDateState] = useState(new Date())
+  const changeDate = (e) => {
+    setDateState(e)
+    console.log(e)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+    
+    <Calender 
+    
+    />
+  
+  </Provider>
   );
 }
 
