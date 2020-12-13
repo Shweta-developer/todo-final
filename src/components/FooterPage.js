@@ -8,20 +8,20 @@ const FooterPage= (props) => {
   return (
     <>
 <div>
-<Row gutter={16}>
-      <Col  span={4}>
-<Title level={4} style={{color:'green'}}>Complete</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'yellow'}}>Postponed</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'red'}}>Undone</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'grey'}}>All Tasks</Title></Col>
-<Col  span={4}></Col><Col  span={4}/></Row>
-<Row gutter={16}>
-      <Col  span={4}>
-<Title level={4} style={{color:'green'}}>{props.complete}</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'yellow'}}>{props.postponed}</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'red'}}>{props.undone}</Title></Col>
-<Col  span={4}><Title level={4} style={{color:'grey'}}>{props.allTasks}</Title></Col>
-<Col  span={4}><ModalPage /></Col><Col  span={4}/></Row>
+<Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+      <Col  span={5}>
+<Title level={5} style={{color:'green'}}>Complete</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'yellow'}}>Postponed</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'red'}}>Undone</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'grey'}}>All Tasks</Title></Col>
+<Col  span={4}></Col></Row>
+<Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+      <Col  span={5}>
+<Title level={5} style={{color:'green'}}>{props.complete}</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'yellow'}}>{props.postponed}</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'red'}}>{props.undone}</Title></Col>
+<Col  span={5}><Title level={5} style={{color:'grey'}}>{props.allTasks}</Title></Col>
+<Col  span={4}><ModalPage /></Col></Row>
      
    </div>
   </>
