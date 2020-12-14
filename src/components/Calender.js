@@ -39,7 +39,7 @@ const Calender= ({ todos, fetchTodo }) => {
 }, [dateState])
   return (
     
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout >
     <Sider className="sider-layout" >
       
       <div><Weather /></div>
