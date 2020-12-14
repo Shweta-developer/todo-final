@@ -50,7 +50,7 @@ const Calender= ({ todos, fetchTodo }) => {
       
     </Sider>
     <Layout className="site-layout" style={{background:'#fff'}}>
-      <Header className="site-layout-background" style={{ padding: 0,background:'#E6EEF5',textAlign:'center',width:'100%' }} ><Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} >
+      <Header className="site-layout-background" style={{ padding: 0,background:'#E6EEF5',textAlign:'center',minWidth:700 }} ><Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} >
               <Col span={24}>
         <Title level={4} style={{paddingTop:'10px',color:'#777978'}}>{dateState}</Title></Col></Row></Header>
       <Content style={{ margin: '0 16px' }}>
@@ -58,7 +58,7 @@ const Calender= ({ todos, fetchTodo }) => {
               <Breadcrumb.Item>ToDo App</Breadcrumb.Item>
               
             </Breadcrumb>
-        <div className="site-layout-background" style={{ padding: '24px', minHeight: 350,alignItems:'center',justifyContent:'center',display:'flex' }}>
+        <div className="site-layout-background" style={{ padding: '24px', minHeight: 350,alignItems:'center',justifyContent:'center',display:'flex',minWidth:700 }}>
         <Calendar
       value={selectedDay}
       onChange={changeDate}
@@ -66,7 +66,7 @@ const Calender= ({ todos, fetchTodo }) => {
       shouldHighlightWeekends/>
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center',background:'#ffff' }}>
+      <Footer style={{ textAlign: 'center',background:'#ffff',minWidth:700 }}>
       <Divider style={{background:'#D7DED7'}}/>
       <FooterPage allTasks={todoarr.length} complete={todoarr.filter(com=>com.status.includes("complete")).length}
   postponed={todoarr.filter(pstpon=>pstpon.status.includes("postponed")).length}
